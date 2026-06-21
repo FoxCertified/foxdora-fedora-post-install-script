@@ -5,7 +5,7 @@
 #### What?
 A Post-Install Script for Fedora Linux 44! 
 #### Why?
-The goal of this script is minimizing some of Fedora rough points, while also setting the groundwork to avoid usage of the terminal in the future and easing it's usage if needed. Also so you can reinstall the OS really really fast.
+The goal of this script is minimizing Fedora's rough points, while also setting the groundwork to avoid usage of the terminal in the future and easing it's usage if needed. Also so you can reinstall the OS really really fast.
 #### When will it be released?
 When it's ready, which is rather soon.
 # Download Fedora Linux here:
