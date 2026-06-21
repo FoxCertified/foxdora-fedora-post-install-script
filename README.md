@@ -1,12 +1,13 @@
-# Foxdora 44 - Fedora 44 Post-Install Script
 
-  
-
+# Foxdora 44 Post-Install Script for Fedora 44
 ## How to run the script:
 
-1. Open terminal in your Home.
-2. `git clone https://gitlab.com/fox-does-stuff/foxdora-44-post-install-script.git && cd ./foxdora-44-post-install-script`
-3. Start the script by typing `./start-foxdora.sh` into the terminal and pressing enter.
+ 1. [Download latest release](https://github.com/FoxCertified/foxdora-fedora-post-install-script/releases/tag/release)
+ 2. Move *emphasized text*
+ 3. List
+ 4. List
+
+Start the script by typing `./start-foxdora.sh` into the terminal and pressing enter.
 
 You can also download the latest files yourself:
 
