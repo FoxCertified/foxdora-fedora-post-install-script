@@ -1,6 +1,3 @@
-
-  
-
 # Foxdora 44 - Fedora Post-Install Script
 
   
