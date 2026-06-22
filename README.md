@@ -12,7 +12,7 @@ When it's ready, which is rather soon.
  - [Fedora Workstation(GNOME)](https://fedoraproject.org/workstation/)
  - [Fedora Spins](https://fedoraproject.org/spins/)
 
-## How to run the Foxdora
+## How to run Foxdora
  1. [Releasing soon!](#)
  2. Move ***Foxdora44-X.X.tar.gz*** to your Home folder
  3. Right click on ***Foxdora44-X.X.tar.gz*** and select Extract>Extract Here, go into the folder.
