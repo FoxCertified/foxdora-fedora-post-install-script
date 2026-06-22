@@ -2,6 +2,8 @@
 
 
 
+
+
 # Foxdora 44 Post-Install Script for Fedora 44
 ![Foxdora 44 Banner](https://github.com/FoxCertified/foxdora-fedora-post-install-script/blob/main/Foxdora44.png?raw=true)
 #### What?
@@ -37,8 +39,11 @@ When it's ready, which is rather soon.
 
 #### Quality of Life
  - Helpful system utilities are installed to assist in minimizing future terminal usage.
-	 - BTRFS Assistant, for managing snapshots(backups) using the BTRFS file system.
+	 - Bazaar, a dedicated app store for Flatpak applications.
+	 - Flatseal, for adjusting Flatpak application permissions.
+	 - Gearlever, for AppImage management.
 	 - GNOME DISK, for assigning ownership of drives to yourself without the terminal.
+	 - BTRFS Assistant, for managing snapshots(backups) using the BTRFS file system.
  - Several Terminal Adjustments:
 	 - Shell is defaulted to zsh, enables terminal colored syntax highlighting and auto completion.
 	 - DNF is tweaked so that the default input for Enter is "Yes" in Y/N questions.
@@ -51,31 +56,39 @@ When it's ready, which is rather soon.
 #### Applications List
 
  - Installs the following applications:
-   - [Zsh](https://www.zsh.org), [Zsh Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting), [Fastfetch](https://github.com/fastfetch-cli/fastfetch)
-   - [BTRFS Assistant](https://gitlab.com/btrfs-assistant/btrfs-assistant), [GNOME Disk](https://apps.gnome.org/DiskUtility/)
-   - [Bazaar](https://github.com/bazaar-org/bazaar), [Flatseal](https://github.com/tchx84/flatseal), [Gearlever](https://github.com/mijorus/gearlever)
-   - [Kate Text Editor](https://kate-editor.org), replaces Kwrite in KDE Plasma installs.
+	 - [zsh](https://www.zsh.org) - a fast terminal shell with auto completion.
+		 - [Zsh Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - for syntax highlighting.
+		 - [Fastfetch](https://github.com/fastfetch-cli/fastfetch) - displays system specs and other information.
+	 - [BTRFS Assistant](https://gitlab.com/btrfs-assistant/btrfs-assistant) - BTRFS management software.
+	 - [GNOME Disk](https://apps.gnome.org/DiskUtility/) - the GNOME Partition Manager.
+	 - [Bazaar](https://github.com/bazaar-org/bazaar) - Flatpak App Store
+		 - [Flatseal](https://github.com/tchx84/flatseal) - Flatpak Permission management.
+	 - [Gearlever](https://github.com/mijorus/gearlever) - AppImage management.
+	 - [Kate Text Editor](https://kate-editor.org) - Simple and Advanced text editor. Replaces Kwrite in KDE Plasma installs.
  - User Choice: You can install the following applications:
-   - [Vivaldi Web Browser](https://vivaldi.com)
-   - [MullvadVPN](https://mullvad.net)
+	 - [Vivaldi](https://vivaldi.com) - Privacy first web browser based on Chromium with a built-in adblocker.
+	 - [MullvadVPN](https://mullvad.net) - a low-cast VPN service. €5/month, including VAT.
  - User Choice: You can install the following Extra Utilities:
-   - [OBS Studio](https://obsproject.com)
-   - [Easy Effects](https://github.com/wwmm/easyeffects)
-   - [Video Downloader](https://github.com/Unrud/video-downloader)
+	 - [OBS Studio](https://obsproject.com) - recording and broadcasting software.
+	 - [Easy Effects](https://github.com/wwmm/easyeffects) - can filter speaker ouput and microphone input for voice calls. Similar to Nvidia Broadcast.
+	 - [Video Downloader](https://github.com/Unrud/video-downloader) - easy downloading of videos you find on the internet, runs on your machine!
  - User Choice: You can install the following Gaming Applications:
-   - [Steam](https://store.steampowered.com)
-   - [Faugus Launcher](https://github.com/Faugus/faugus-launcher)
-   - [Prism Launcher](https://prismlauncher.org)
-   - [Discord](https://discord.com)
-   - [Gamemode](https://github.com/feralinteractive/gamemode), [Mangohud](https://github.com/flightlessmango/Mangohud)
-   - [Goverlay](https://github.com/benjamimgois/goverlay), [Proton Plus](https://protonplus.vysp3r.com)
- - User Choice: You can choose to install the following creative software:
-   - [KdenLive](https://kdenlive.org), [Audacity](https://www.audacityteam.org)
-   - [Blender](https://www.blender.org)
-   - [Blockbench](https://www.blockbench.net)
-   - [Krita](https://krita.org)
-   - [GNU Image Manipulation Program(GIMP)](https://www.gimp.org)
-   - [RapidRAW](https://github.com/cybertimon/rapidraw)
+	 - [Steam](https://store.steampowered.com) - for Steam games.
+	 - [Faugus Launcher](https://github.com/Faugus/faugus-launcher) - for non-Steam games.
+	 - [Prism Launcher](https://prismlauncher.org) - A minecraft launcher.
+	 - [Discord](https://discord.com) - Chatting Application.
+	 - [Gamemode](https://github.com/feralinteractive/gamemode) - Automates a few nice to haves for gaming on Linux.
+	 - [Mangohud](https://github.com/flightlessmango/Mangohud) - Performance overlay and FPS limiter, similar to [RivaTuner Statistics Server](https://www.guru3d.com/page/rivatuner-rtss-homepage/).
+		 - [Goverlay](https://github.com/benjamimgois/goverlay) - GUI for setting up mangohud.
+	 - [Proton Plus](https://protonplus.vysp3r.com) - Easy management for Proton and Steam launch commands.
+ - User Choice: You can choose to install the following creative apppo:
+	 - [KdenLive](https://kdenlive.org) - Non-linear video editor.
+	 - [Audacity](https://www.audacityteam.org) - Audio recording and editing.
+	 - [Blender](https://www.blender.org) - Advanced 3D Modeling software.
+	 - [Blockbench](https://www.blockbench.net) - 3D Modeling software specialized for low-poly work.
+	 - [Krita](https://krita.org) - Digital Painting software.
+	 - [GNU Image Manipulation Program(GIMP)](https://www.gimp.org) - Photo Manipulation software.
+	 - [RapidRAW](https://github.com/cybertimon/rapidraw) - Nondestructive photography post-processing software.
 
 ## Examples
 
