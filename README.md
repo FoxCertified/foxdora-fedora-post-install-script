@@ -1,8 +1,5 @@
-
-# Foxdora 44 Post-Install Script for Fedora 44
+# Foxdora 44, a post-install script for Fedora 44
 ![Foxdora 44 Banner](https://github.com/FoxCertified/foxdora-fedora-post-install-script/blob/main/Foxdora44.png?raw=true)
-#### What?
-A Post-Install Script for Fedora Linux 44! 
 #### Why?
 The goal of this script is minimizing Fedora's rough points with things such as the media codecs, as well as avoiding terminal usage in the future. The terminal is still tweaked for those that would wish to use it, or in the event an issue requires you to use it.
 
