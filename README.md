@@ -1,3 +1,4 @@
+
 # Foxdora 44, a post-install script for Fedora 44
 ![Foxdora 44 Banner](https://github.com/FoxCertified/foxdora-fedora-post-install-script/blob/main/Foxdora44.png?raw=true)
 #### Why?
@@ -17,6 +18,12 @@ When it's ready, which is rather soon.
  3. Right click on ***Foxdora44-X.X.tar.gz*** and select Extract>Extract Here, go into the folder.
  4.  Right click on empty space and navigate to Actions>Open Terminal Here.
  5.  Start the script by typing `./start-foxdora.sh` into the terminal and pressing enter.
+# Alternative 1
+ 6. Open your terminal application
+ 7. `wget https://github.com/FoxCertified/foxdora-fedora-post-install-script/releases/download/test/Foxdora44-0.1.tar.gz && tar xf ./Foxdora44-0.1.tar.gz && cd ./Foxdora44`
+ 8. Start the script by typing `./start-foxdora.sh` into the terminal and pressing enter.
+# Alternative 2
+ 9. `git clone https://github.com/FoxCertified/foxdora-fedora-post-install-script.git`
 
   
 # What does it do?
