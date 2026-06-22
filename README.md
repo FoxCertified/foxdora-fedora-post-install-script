@@ -11,7 +11,7 @@ A Post-Install Script for Fedora Linux 44!
 #### Why?
 The goal of this script is minimizing Fedora's rough points with things such as the media codecs, as well as avoiding terminal usage in the future. The terminal is still tweaked for those that would wish to use it, or in the event an issue requires you to use it.
 
-I originally made this to quickly spin up new Fedora installs, often for people who didn't want to use the terminal(or even knew what one was).
+I originally made this to quickly spin up new Fedora installs, often for people who didn't want to use the terminal(or knew what it was).
 #### When will it be released?
 When it's ready, which is rather soon.
 # Download Fedora Linux here:
