@@ -42,7 +42,7 @@ When it's ready, which is rather soon.
  - Several Terminal Adjustments:
 	 - Shell is defaulted to zsh, enables terminal colored syntax highlighting and auto completion.
 	 - DNF is tweaked so that the default input for Enter is "Yes" in Y/N questions.
-	 - Help aliases added to zsh(and Bash!), listed below.
+	 - Help aliases added to zsh(and Bash!), [listed below](#terminal-aliasesfor-zsh-and-bash).
 	 - The [FoxFetch](https://github.com/FoxCertified/foxfetch-theme) Fastfetch theme is installed.
 
 #### Performance 
