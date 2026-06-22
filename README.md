@@ -119,4 +119,4 @@ When it's ready, which is rather soon.
 I will keep working on this as long as I keep using Fedora :)
 
 ## WARNING(Effectively Legal Boilerplate)
-These scripts are provided as-is, I can not be held responsible for them causing damage to your hardware or operating system.
+These scripts are provided as-is, I can not be held responsible for them causing any system breakage.
