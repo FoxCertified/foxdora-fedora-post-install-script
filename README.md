@@ -1,5 +1,7 @@
 
 
+
+
 # Foxdora 44 Post-Install Script for Fedora 44
 ![Foxdora 44 Banner](https://github.com/FoxCertified/foxdora-fedora-post-install-script/blob/main/Foxdora44.png?raw=true)
 #### What?
@@ -30,30 +32,29 @@ When it's ready, which is rather soon.
  - The RPM Fusion repositories are enabled alongside Flathub for Flatpak.
  - The Fedora Flatpak source is disabled, as Flathub has everything it has and more.
  - Third-party codecs that Fedora can not include by default are installed from RPM Fusion.
- - Emoji Unicode 17 Fallback font.
+ - Installs the latest Noto Emoji Fonts, which includes Emoji Unicode 17 support. Long Live 🫪
  - User choice: Install the Nvidia drivers, GTX 800/900/10/16 and RTX20/30/40/50 Supported.
 
 #### Quality of Life
  - Helpful system utilities are installed to assist in minimizing future terminal usage.
-   - BTRFS Assistant, for managing snapshots(backups) using the BTRFS file system.
-   - GNOME DISK, for assigning ownership of drives to yourself without the terminal.
-   - 
+	 - BTRFS Assistant, for managing snapshots(backups) using the BTRFS file system.
+	 - GNOME DISK, for assigning ownership of drives to yourself without the terminal.
  - Several Terminal Adjustments:
-   - Shell is defaulted to ZSH, which gives the terminal colored syntax highlighting and auto completion.
-   - DNF is tweaked so that the default input for Enter is "Yes" in Y/N questions.
-   - Aliases for DNF added to zsh(and Bash!), they are listed here
-   - The [FoxFetch](https://github.com/FoxCertified/foxfetch-theme) Fastfetch theme is installed.
+	 - Shell is defaulted to zsh, enables terminal colored syntax highlighting and auto completion.
+	 - DNF is tweaked so that the default input for Enter is "Yes" in Y/N questions.
+	 - Help aliases added to zsh(and Bash!), listed below.
+	 - The [FoxFetch](https://github.com/FoxCertified/foxfetch-theme) Fastfetch theme is installed.
 
 #### Performance 
- - The graphics card cache is increased to 10GB to reduce shader stutter, this is best paired with turning off vulkan pre-compile in Steam.
+ - AMD and Nvidia graphics card cache is increased to 10GB to reduce shader stutter, this is best paired with turning off vulkan pre-compile in Steam.
 
-#### Applications
+#### Applications List
 
  - Installs the following applications:
    - [Zsh](https://www.zsh.org), [Zsh Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting), [Fastfetch](https://github.com/fastfetch-cli/fastfetch)
    - [BTRFS Assistant](https://gitlab.com/btrfs-assistant/btrfs-assistant), [GNOME Disk](https://apps.gnome.org/DiskUtility/)
    - [Bazaar](https://github.com/bazaar-org/bazaar), [Flatseal](https://github.com/tchx84/flatseal), [Gearlever](https://github.com/mijorus/gearlever)
-   - [Kate Text Editor](https://kate-editor.org)
+   - [Kate Text Editor](https://kate-editor.org), replaces Kwrite in KDE Plasma installs.
  - User Choice: You can install the following applications:
    - [Vivaldi Web Browser](https://vivaldi.com)
    - [MullvadVPN](https://mullvad.net)
@@ -78,15 +79,36 @@ When it's ready, which is rather soon.
 
 ## Examples
 
-### Terminal aliases
-#### DNF Management:
- - dnf search [search term] ---> foxse [search term]
- - sudo dnf install [program name] ---> foxin [program name]
- - sudo dnf remove [program name] ---> foxrm [program name]
- - sudo dnf reinstall 
+### Terminal aliases(for zsh and bash)
+#### Custom Helpers
+ - foxupdater
+   - `sudo dnf update` and `flatpak update` - Updates native and Flatpak packages back to back.
+ - foxfetch
+   - `fastfetch` - Displays system spec and other information.
+ - clearfox
+   - `clear && fastfetch` - The same as `foxfetch` but it clears the terminals before displaying.
+ - installfont
+   - Downloads the latest version of the fallback font and re-installs it, for future emoji releases.
+ - removefont
+   - Uninstalls the emoji fallback font, for debugging.
+#### Full DNF Alias set:
+ -  foxse [search term]
+	 - `dnf search [search term]`
+ -  foxin [program name]
+	 - `sudo dnf install [program name]`
+ -  foxrm [program name]
+	 - `sudo dnf remove [program name]`
+ -  refoxin [program name]
+	 - `sudo dnf reinstall [program name]`
+ -  swapfox [program name] [program name]
+	 - `sudo dnf swap [program name] [program name]`
+ -  foxlist
+	 - `dnf repolist`
+ -  foxinfo [repo name]
+	 - `dnf list --installed | grep [repo name]`
 
-### FastFetch  Theme
-![enter image description here](https://github.com/FoxCertified/foxfetch-theme/blob/main/Foxfetch%20with%20Logo.png?raw=true)
+### [FoxFetch  Theme](https://github.com/FoxCertified/foxfetch-theme)
+![FastFetch Display Output](https://github.com/FoxCertified/foxfetch-theme/blob/main/Foxfetch%20with%20Logo.png?raw=true)
 
 ## Project status
 
