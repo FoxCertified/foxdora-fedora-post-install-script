@@ -1,34 +1,36 @@
 # WORK IN PROGRESS, SUBJECT TO CHANGE
 # Foxdora 44, a post-install script for Fedora 44
 ![Foxdora 44 Banner](https://github.com/FoxCertified/foxdora-fedora-post-install-script/blob/main/Foxdora44.png?raw=true)
-#### Why?
+### Why?
 The goal of this script is minimizing Fedora's rough points with things such as the media codecs, as well as avoiding terminal usage in the future. The terminal is still tweaked for those that would wish to use it, or in the event an issue requires you to use it.
 
 I originally made this to quickly spin up new Fedora installs, often for people who didn't want to use the terminal(or knew what it was).
 #### When will it be released?
 When it's ready, which is rather soon.
-# Download Fedora Linux here:
+## Download Fedora Linux here
  - [Fedora KDE Plasma Desktop](https://fedoraproject.org/kde/) (Recommended)
  - [Fedora Workstation(GNOME)](https://fedoraproject.org/workstation/)
  - [Fedora Spins](https://fedoraproject.org/spins/)
 
-# How to run the script:
+## How to run the Foxdora
  1. [Releasing soon!](#)
  2. Move ***Foxdora44-X.X.tar.gz*** to your Home folder
  3. Right click on ***Foxdora44-X.X.tar.gz*** and select Extract>Extract Here, go into the folder.
  4.  Right click on empty space and navigate to Actions>Open Terminal Here.
  5.  Start the script by typing `./start-foxdora.sh` into the terminal and pressing enter.
-# Alternative 1
- 6. Open your terminal application
- 7. `wget https://github.com/FoxCertified/foxdora-fedora-post-install-script/releases/download/test/Foxdora44-0.1.tar.gz && tar xf ./Foxdora44-0.1.tar.gz && cd ./Foxdora44`
- 8. Start the script by typing `./start-foxdora.sh` into the terminal and pressing enter.
-# Alternative 2
- 9. `git clone https://github.com/FoxCertified/foxdora-fedora-post-install-script.git`
+### Alternative 1
+ 1. Open your terminal application
+ 2. `wget https://github.com/FoxCertified/foxdora-fedora-post-install-script/releases/download/test/Foxdora44-0.1.tar.gz && tar xf ./Foxdora44-0.1.tar.gz && cd ./Foxdora44`
+ 3. Start the script by typing `./start-foxdora.sh` into the terminal and pressing enter.
+### Alternative 2
+ 1. Open your terminal application.
+ 2. `git clone https://github.com/FoxCertified/foxdora-fedora-post-install-script.git && cd ./foxdora-fedora-post-install-script`
+ 3. Start the script by typing `./start-foxdora.sh` into the terminal and pressing enter.
 
   
-# What does it do?
+## What does it do?
 
-#### System Changes:
+### System Changes:
  - Installs the latest system updates.
  - The RPM Fusion repositories are enabled alongside Flathub for Flatpak.
  - The Fedora Flatpak source is disabled, as Flathub has everything it has and more.
@@ -36,7 +38,7 @@ When it's ready, which is rather soon.
  - Installs the latest Noto Emoji Fonts, which includes Emoji Unicode 17 support. Long Live 🫪
  - User choice, Install the Nvidia drivers, GTX 800/900/10/16 and RTX20/30/40/50 Supported.
 
-#### Quality of Life
+### Quality of Life
  - Helpful system utilities are installed to assist in minimizing future terminal usage.
 	 - Bazaar, a dedicated app store for Flatpak applications.
 	 - Flatseal, for adjusting Flatpak application permissions.
@@ -49,11 +51,10 @@ When it's ready, which is rather soon.
 	 - Help aliases added to zsh(and Bash!), [listed below](#terminal-aliasesfor-zsh-and-bash).
 	 - The [FoxFetch](#foxfetch--theme) Fastfetch theme is installed.
 
-#### Performance 
+### Performance 
  - AMD and Nvidia graphics card cache is increased to 10GB to reduce shader stutter, this is best paired with turning off vulkan pre-compile in Steam.
 
-#### Applications List
-
+## Full Applications List
  - Installs the following applications:
 	 - [zsh](https://www.zsh.org) - a fast terminal shell with auto completion.
 		 - [Zsh Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - for syntax highlighting.
