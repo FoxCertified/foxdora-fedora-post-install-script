@@ -4,6 +4,7 @@
 
 
 
+
 # Foxdora 44 Post-Install Script for Fedora 44
 ![Foxdora 44 Banner](https://github.com/FoxCertified/foxdora-fedora-post-install-script/blob/main/Foxdora44.png?raw=true)
 #### What?
@@ -48,7 +49,7 @@ When it's ready, which is rather soon.
 	 - Shell is defaulted to zsh, enables terminal colored syntax highlighting and auto completion.
 	 - DNF is tweaked so that the default input for Enter is "Yes" in Y/N questions.
 	 - Help aliases added to zsh(and Bash!), [listed below](#terminal-aliasesfor-zsh-and-bash).
-	 - The [FoxFetch](https://github.com/FoxCertified/foxfetch-theme) Fastfetch theme is installed.
+	 - The [FoxFetch](#foxfetch--theme) Fastfetch theme is installed.
 
 #### Performance 
  - AMD and Nvidia graphics card cache is increased to 10GB to reduce shader stutter, this is best paired with turning off vulkan pre-compile in Steam.
