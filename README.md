@@ -14,7 +14,6 @@ I originally made this to quickly spin up new Fedora installs, often for people 
 When it's ready, which is rather soon.
 # Download Fedora Linux here:
  - [Fedora KDE Plasma Desktop](https://fedoraproject.org/kde/) (Recommended)
- - <a href="https://fedoraproject.org/kde/" target="_blank">Fedora KDE Plasma Desktop</a>
  - [Fedora Workstation(GNOME)](https://fedoraproject.org/workstation/)
  - [Fedora Spins](https://fedoraproject.org/spins/)
 
