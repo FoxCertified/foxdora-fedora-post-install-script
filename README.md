@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 # Foxdora 44 Post-Install Script for Fedora 44
 ![Foxdora 44 Banner](https://github.com/FoxCertified/foxdora-fedora-post-install-script/blob/main/Foxdora44.png?raw=true)
 #### What?
@@ -36,7 +29,7 @@ When it's ready, which is rather soon.
  - The Fedora Flatpak source is disabled, as Flathub has everything it has and more.
  - Third-party codecs that Fedora can not include by default are installed from RPM Fusion.
  - Installs the latest Noto Emoji Fonts, which includes Emoji Unicode 17 support. Long Live 🫪
- - User choice: Install the Nvidia drivers, GTX 800/900/10/16 and RTX20/30/40/50 Supported.
+ - User choice, Install the Nvidia drivers, GTX 800/900/10/16 and RTX20/30/40/50 Supported.
 
 #### Quality of Life
  - Helpful system utilities are installed to assist in minimizing future terminal usage.
@@ -66,14 +59,7 @@ When it's ready, which is rather soon.
 		 - [Flatseal](https://github.com/tchx84/flatseal) - Flatpak Permission management.
 	 - [Gearlever](https://github.com/mijorus/gearlever) - AppImage management.
 	 - [Kate Text Editor](https://kate-editor.org) - Simple and Advanced text editor. Replaces Kwrite in KDE Plasma installs.
- - User Choice: You can install the following applications:
-	 - [Vivaldi](https://vivaldi.com) - Privacy first web browser based on Chromium with a built-in adblocker.
-	 - [MullvadVPN](https://mullvad.net) - a low-cast VPN service. €5/month, including VAT.
- - User Choice: You can install the following Extra Utilities:
-	 - [OBS Studio](https://obsproject.com) - recording and broadcasting software.
-	 - [Easy Effects](https://github.com/wwmm/easyeffects) - can filter speaker ouput and microphone input for voice calls. Similar to Nvidia Broadcast.
-	 - [Video Downloader](https://github.com/Unrud/video-downloader) - easy downloading of videos you find on the internet, runs on your machine!
- - User Choice: You can install the following Gaming Applications:
+ - User Choice, install all listed gaming applications and tools:
 	 - [Steam](https://store.steampowered.com) - for Steam games.
 	 - [Faugus Launcher](https://github.com/Faugus/faugus-launcher) - for non-Steam games.
 	 - [Prism Launcher](https://prismlauncher.org) - A minecraft launcher.
@@ -82,7 +68,7 @@ When it's ready, which is rather soon.
 	 - [Mangohud](https://github.com/flightlessmango/Mangohud) - Performance overlay and FPS limiter, similar to [RivaTuner Statistics Server](https://www.guru3d.com/page/rivatuner-rtss-homepage/).
 		 - [Goverlay](https://github.com/benjamimgois/goverlay) - GUI for setting up mangohud.
 	 - [Proton Plus](https://protonplus.vysp3r.com) - Easy management for Proton and Steam launch commands.
- - User Choice: You can choose to install the following creative apppo:
+ - User Choice, You can choose to install the following creative applications:
 	 - [KdenLive](https://kdenlive.org) - Non-linear video editor.
 	 - [Audacity](https://www.audacityteam.org) - Audio recording and editing.
 	 - [Blender](https://www.blender.org) - Advanced 3D Modeling software.
@@ -90,6 +76,12 @@ When it's ready, which is rather soon.
 	 - [Krita](https://krita.org) - Digital Painting software.
 	 - [GNU Image Manipulation Program(GIMP)](https://www.gimp.org) - Photo Manipulation software.
 	 - [RapidRAW](https://github.com/cybertimon/rapidraw) - Nondestructive photography post-processing software.
+ - User Choice, You can choose to install the following applications:
+	 - [Vivaldi](https://vivaldi.com) - Privacy first web browser based on Chromium with a built-in adblocker.
+	 - [OBS Studio](https://obsproject.com) - recording and broadcasting software.
+	 - [Easy Effects](https://github.com/wwmm/easyeffects) - can filter speaker ouput and microphone input for voice calls. Similar to Nvidia Broadcast.
+	 - [Video Downloader](https://github.com/Unrud/video-downloader) - easy downloading of videos you find on the internet, runs on your machine!
+	 - [MullvadVPN](https://mullvad.net) - a low-cast VPN service. €5/month, including VAT.
 
 ## Examples
 
