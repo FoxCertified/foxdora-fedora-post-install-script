@@ -51,7 +51,8 @@ rm ./Noto-COLRv1.ttf
 sudo dnf -y install kate flatseal gnome-disk-utility btrfs-assistant
 sudo dnf -y remove kwrite
 ##Flatpak
-flatpak -y install io.github.kolunmi.Bazaar it.mijorus.gearlever
+flatpak -y install it.mijorus.gearlever
+#io.github.kolunmi.Bazaar
   echo ""
   echo "Installed main utilities"
   sleep 3
@@ -115,6 +116,18 @@ yesexpr="$1"; noexpr="$2"; yesword="$3"; noword="$4"
 while true; do
     read -p "(${yesword} / ${noword})? " yn
     if [[ "$yn" =~ $yesexpr ]]; then echo "Accepted";./scripts/subscripts/extra-app-meta.sh; break; fi
+    if [[ "$yn" =~ $noexpr ]]; then echo "Declined";break; fi
+    echo "Answer ${yesword} / ${noword}."
+done
+
+##MullvadVPN
+echo ""
+echo "Would you like to install MullvadVPN?"
+set -- $(locale LC_MESSAGES)
+yesexpr="$1"; noexpr="$2"; yesword="$3"; noword="$4"
+while true; do
+    read -p "(${yesword} / ${noword})? " yn
+    if [[ "$yn" =~ $yesexpr ]]; then echo "Accepted";./scripts/subscripts/mullvad-install.sh; break; fi
     if [[ "$yn" =~ $noexpr ]]; then echo "Declined";break; fi
     echo "Answer ${yesword} / ${noword}."
 done

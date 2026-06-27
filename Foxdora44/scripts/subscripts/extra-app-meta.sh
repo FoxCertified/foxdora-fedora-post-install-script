@@ -37,6 +37,18 @@ while true; do
 done
 
 #Fedora
+echo "Would you like to install software to control your RGB?"
+echo "openRGB"
+set -- $(locale LC_MESSAGES)
+yesexpr="$1"; noexpr="$2"; yesword="$3"; noword="$4"
+while true; do
+    read -p "(${yesword} / ${noword})? " yn
+    if [[ "$yn" =~ $yesexpr ]]; then sudo sudo dnf -y install openrgb; break; fi
+    if [[ "$yn" =~ $noexpr ]]; then echo Declined;break; fi
+    echo "Answer ${yesword} / ${noword}."
+done
+
+#Fedora
 echo "Would you like to install Video Downloader?"
 echo "Video Downloader"
 set -- $(locale LC_MESSAGES)
@@ -48,14 +60,4 @@ while true; do
     echo "Answer ${yesword} / ${noword}."
 done
 
-##MullvadVPN
-echo ""
-echo "Would you like to install MullvadVPN?"
-set -- $(locale LC_MESSAGES)
-yesexpr="$1"; noexpr="$2"; yesword="$3"; noword="$4"
-while true; do
-    read -p "(${yesword} / ${noword})? " yn
-    if [[ "$yn" =~ $yesexpr ]]; then echo "Accepted";./scripts/subscripts/mullvad-install.sh; break; fi
-    if [[ "$yn" =~ $noexpr ]]; then echo "Declined";break; fi
-    echo "Answer ${yesword} / ${noword}."
-done
+
