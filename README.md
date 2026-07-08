@@ -19,14 +19,17 @@ When it's ready, which is rather soon.
  3. Right click on ***Foxdora44-X.X.tar.gz*** and select Extract>Extract Here, go into the folder.
  4.  Right click on empty space and navigate to Actions>Open Terminal Here.
  5.  Start the script by typing `./start-foxdora.sh` into the terminal and pressing enter.
+ 6. (NVIDIA ONLY) Start the Nvidia install script after reboot by typing `./install-nvidia-drivers.sh` into the terminal and pressing enter.
 ### Alternative 1
  1. Open your terminal application
  2. `wget https://github.com/FoxCertified/foxdora-fedora-post-install-script/releases/download/test/Foxdora44-0.1.tar.gz && tar xf ./Foxdora44-0.1.tar.gz && cd ./Foxdora44`
  3. Start the script by typing `./start-foxdora.sh` into the terminal and pressing enter.
+ 4. (NVIDIA ONLY) Start the Nvidia install script after reboot by typing `./install-nvidia-drivers.sh` into the terminal and pressing enter.
 ### Alternative 2
  1. Open your terminal application.
  2. `git clone https://github.com/FoxCertified/foxdora-fedora-post-install-script.git && cd ./foxdora-fedora-post-install-script`
  3. Start the script by typing `./start-foxdora.sh` into the terminal and pressing enter.
+ 4. (NVIDIA ONLY) Start the Nvidia install script after reboot by typing `./install-nvidia-drivers.sh` into the terminal and pressing enter.
 
   
 ## What does it do?
