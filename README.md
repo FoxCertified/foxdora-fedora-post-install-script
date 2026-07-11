@@ -13,14 +13,14 @@ When it's ready, which is rather soon.
  - [Fedora Workstation(GNOME)](https://fedoraproject.org/workstation/)
  - [Fedora Spins](https://fedoraproject.org/spins/)
 
-### How to run Foxdora(Cwill not work until release)
- 1. Open your terminal application
- 2. `wget https://github.com/FoxCertified/foxdora-fedora-post-install-script/releases/download/test/Foxdora44-0.1.tar.gz && tar xf ./Foxdora44-0.1.tar.gz && cd ./Foxdora44`
+### How to run Foxdora(will not work until release)
+ 1. Open your terminal application.
+ 2. copy and paste `wget https://github.com/FoxCertified/foxdora-fedora-post-install-script/releases/download/test/Foxdora44-0.1.tar.gz && tar xf ./Foxdora44-0.1.tar.gz && cd ./Foxdora44` into the terminal.
  3. Start the script by typing `./start-foxdora.sh` into the terminal and pressing enter.
  
 ### How to install the Nvidia drivers after restarting
- 1. Open your terminal application
- 2. `cd ./foxdora44`
+ 1. Open your terminal application.
+ 2. copy and paste `cd ./foxdora44` into the terminal.
  4. Start the Nvidia install script by typing `./install-nvidia-drivers.sh` into the terminal and pressing enter.
 
   
