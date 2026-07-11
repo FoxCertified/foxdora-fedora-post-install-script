@@ -13,34 +13,26 @@ When it's ready, which is rather soon.
  - [Fedora Workstation(GNOME)](https://fedoraproject.org/workstation/)
  - [Fedora Spins](https://fedoraproject.org/spins/)
 
-## How to run Foxdora
- 1. [Releasing soon!](#)
- 2. Move ***Foxdora44-X.X.tar.gz*** to your Home folder
- 3. Right click on ***Foxdora44-X.X.tar.gz*** and select Extract>Extract Here, go into the folder.
- 4.  Right click on empty space and navigate to Actions>Open Terminal Here.
- 5.  Start the script by typing `./start-foxdora.sh` into the terminal and pressing enter.
- 6. (NVIDIA ONLY) Start the Nvidia install script after reboot by typing `./install-nvidia-drivers.sh` into the terminal and pressing enter.
-### Alternative 1
+### How to run Foxdora(Cwill not work until release)
  1. Open your terminal application
  2. `wget https://github.com/FoxCertified/foxdora-fedora-post-install-script/releases/download/test/Foxdora44-0.1.tar.gz && tar xf ./Foxdora44-0.1.tar.gz && cd ./Foxdora44`
  3. Start the script by typing `./start-foxdora.sh` into the terminal and pressing enter.
- 4. (NVIDIA ONLY) Start the Nvidia install script after reboot by typing `./install-nvidia-drivers.sh` into the terminal and pressing enter.
-### Alternative 2
- 1. Open your terminal application.
- 2. `git clone https://github.com/FoxCertified/foxdora-fedora-post-install-script.git && cd ./foxdora-fedora-post-install-script`
- 3. Start the script by typing `./start-foxdora.sh` into the terminal and pressing enter.
- 4. (NVIDIA ONLY) Start the Nvidia install script after reboot by typing `./install-nvidia-drivers.sh` into the terminal and pressing enter.
+ 
+### How to install the Nvidia drivers after restarting
+ 1. Open your terminal application
+ 2. `cd ./foxdora44`
+ 4. Start the Nvidia install script by typing `./install-nvidia-drivers.sh` into the terminal and pressing enter.
 
   
 ## What does it do?
 
 ### System Changes:
  - Installs the latest system updates.
- - The RPM Fusion repositories are enabled alongside Flathub for Flatpak.
+ - The RPM Fusion and Terra repositories are enabled alongside Flathub for Flatpak.
  - The Fedora Flatpak source is disabled, as Flathub has everything it has and more.
- - Third-party codecs that Fedora can not include by default are installed from RPM Fusion.
+ - Third-party codecs that Fedora can not include by default are installed from RPM Fusion and Terra.
  - Installs the latest Noto Emoji Fonts, which includes Emoji Unicode 17 support. Long Live 🫪
- - User choice, Install the Nvidia drivers, GTX 800/900/10/16 and RTX20/30/40/50 Supported.
+ - Install the Nvidia drivers, RTX and GTX 16 Supported. GTX 800/900/10 series Install Script offered.
 
 ### Quality of Life
  - Helpful system utilities are installed to assist in minimizing future terminal usage.
@@ -73,7 +65,7 @@ When it's ready, which is rather soon.
 	 - [Faugus Launcher](https://github.com/Faugus/faugus-launcher) - for non-Steam games.
 	 - [Prism Launcher](https://prismlauncher.org) - A minecraft launcher.
 	 - [Discord](https://discord.com) - Chatting Application.
-	 - [Gamemode](https://github.com/feralinteractive/gamemode) - Increases system priority for games and prevents automatic suspend/screen locking on desktop experiences without controller detection.
+	 - [Falcond](https://github.com/PikaOS-Linux/falcond) - Increases system priority for games and prevents automatic suspend/screen locking on desktop experiences without controller detection.
 	 - [Mangohud](https://github.com/flightlessmango/Mangohud) - Performance overlay and FPS limiter, similar to [RivaTuner Statistics Server](https://www.guru3d.com/page/rivatuner-rtss-homepage/).
 		 - [Goverlay](https://github.com/benjamimgois/goverlay) - GUI for setting up mangohud.
  - User Choice, You can choose to install the following creative applications:
