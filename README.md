@@ -46,7 +46,7 @@ When it's ready, which I hope to be soon.
  - Several Terminal Adjustments:
 	 - Shell is defaulted to zsh, enables terminal colored syntax highlighting and auto completion.
 	 - DNF is tweaked so that the default input for Enter is "Yes" in Y/N questions.
-	 - Help aliases added to zsh(and Bash!), [Listed below](#terminal-aliasesfor-zsh-and-bash).
+	 - Helpful aliases added to zsh(and Bash!), [Listed below](#terminal-aliasesfor-zsh-and-bash).
 	 - The [FoxFetch](#foxfetch--theme) Fastfetch theme is installed.
 
 ### Performance 
@@ -80,6 +80,9 @@ When it's ready, which I hope to be soon.
 	 - [Krita](https://krita.org) - Digital Painting software.
 	 - [GNU Image Manipulation Program(GIMP)](https://www.gimp.org) - Photo Manipulation software.
 	 - [RapidRAW](https://github.com/cybertimon/rapidraw) -  RAW photograph developing software for past Lightroom users.
+	 - Applications that will be added...
+		 - [Bottles](https://usebottles.com) - Run Windows software on Linux with WINE and Proton. May be offered as a replacement to Faugus Launcher or replace it entirely.
+		 - [VIRT Manager](https://virt-manager.org) - Virtual Machine Manager
 	 - Considered Applications...
 		 - [Ardour 9](https://ardour.org) - Digital Audio Workstation
 		 - [Bitwig](https://www.bitwig.com) - Digital Audio Workstation
