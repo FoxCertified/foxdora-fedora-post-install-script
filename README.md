@@ -90,8 +90,8 @@ When it's ready, which I hope to be soon.
 	 - [Vivaldi](https://vivaldi.com) - Privacy first web browser based on Chromium with a built-in adblocker.
 	 - [OBS Studio](https://obsproject.com) - recording and broadcasting software.
 	 - [Easy Effects](https://github.com/wwmm/easyeffects) - can filter speaker ouput and microphone input for voice calls. Similar to Nvidia Broadcast.
-	 - [Video Downloader](https://github.com/Unrud/video-downloader) - easy downloading of videos you find on the internet, runs on your machine!
 	 - [openRGB](https://openrgb.org) - Control the RGB of your computer and other select devices.
+	 - [Video Downloader](https://github.com/Unrud/video-downloader) - easy downloading of videos you find on the internet, runs on your machine!
 	 - [MullvadVPN](https://mullvad.net) - a low-cost VPN service. €5/month, including VAT.
 	 - Applications that will be added...
 		 - [Bottles](https://usebottles.com) - Run Windows software on Linux with WINE and Proton. May be offered as a replacement to Faugus Launcher or replace it entirely.
