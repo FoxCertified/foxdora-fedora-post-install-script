@@ -1,19 +1,22 @@
 
+
 # WORK IN PROGRESS, SUBJECT TO CHANGE
 # Foxdora 44, a post-install script for Fedora 44
 ![Foxdora 44 Banner](https://github.com/FoxCertified/foxdora-fedora-post-install-script/blob/main/Foxdora44.png?raw=true)
 ### Why?
-The goal of this script is minimizing Fedora's rough points with things such as the media codecs, as well as avoiding terminal usage in the future. The terminal is still tweaked for those that would wish to use it, or in the event an issue requires you to use it.
+I originaly made this script to quickly spin up new Fedora installs for myself and people close to me converting to Linux for the first time, I decided to make it public.
 
-I originally made this to quickly spin up new Fedora installs, often for people who didn't want to use the terminal(or knew what it was).
+The primary goal is speeding up Fedora's post-install process, such as installing the media codecs that are left out due to licensing issues. It also minimizes usage of the terminal by installing GUI applications for common terminal use cases. For fans of the terminal, there is also tweaks that improve terminal usage such as syntax highlighting.
+
 #### When will it be released?
-When it's ready, which is rather soon.
+When it's ready, which I hope to be soon.
+
 ## Download Fedora Linux here
  - [Fedora KDE Plasma Desktop](https://fedoraproject.org/kde/) (Recommended)
  - [Fedora Workstation(GNOME)](https://fedoraproject.org/workstation/)
  - [Fedora Spins](https://fedoraproject.org/spins/)
 
-### How to run Foxdora(will not work until release)
+### When the script is finished, this is will be How to run Foxdora
  1. Open your terminal application.
  2. copy and paste `wget https://github.com/FoxCertified/foxdora-fedora-post-install-script/releases/download/test/Foxdora44-0.1.tar.gz && tar xf ./Foxdora44-0.1.tar.gz && cd ./Foxdora44` into the terminal.
  3. Start the script by typing `./start-foxdora.sh` into the terminal and pressing enter.
@@ -51,24 +54,24 @@ When it's ready, which is rather soon.
 
 ## Full Applications List
  - Installs the following applications:
-	 - [zsh](https://www.zsh.org) - a fast terminal shell with auto completion.
-		 - [Zsh Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - syntax highlighting for zsh.
+	 - [zsh](https://www.zsh.org) - Fast terminal shell with auto completion.
+		 - [Zsh Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - Syntax highlighting for zsh.
 		 - [Fastfetch](https://github.com/fastfetch-cli/fastfetch) - Displays system specs and other information.
 	 - [BTRFS Assistant](https://gitlab.com/btrfs-assistant/btrfs-assistant) - BTRFS management software.
-	 - [GNOME Disk](https://apps.gnome.org/DiskUtility/) - The GNOME Partition Manager.
-	 - [Gparted](https://gparted.org) - An advanced partition manager.
+	 - [GNOME Disk](https://apps.gnome.org/DiskUtility/) - GNOME Partition Manager.
+	 - [Gparted](https://gparted.org) - Advanced partition manager.
 	 - [Flatseal](https://github.com/tchx84/flatseal) - Flatpak Permission management.
 	 - [Gearlever](https://github.com/mijorus/gearlever) - AppImage management.
 	 - [Kate Text Editor](https://kate-editor.org) - Simple and Advanced text editor. Replaces Kwrite in KDE Plasma installs.
- - YOu can choose to install all listed gaming applications and tools:
-	 - [Steam](https://store.steampowered.com) - For Steam games.
+ - You can choose to install all listed gaming applications and tools:
+	 - [Steam](https://store.steampowered.com) - Games Launcher
 		 - [Proton Plus](https://protonplus.vysp3r.com) - Easy management for Proton and Steam launch commands.
-	 - [Faugus Launcher](https://github.com/Faugus/faugus-launcher) - For non-Steam games.
-	 - [Prism Launcher](https://prismlauncher.org) - A minecraft launcher.
+	 - [Faugus Launcher](https://github.com/Faugus/faugus-launcher) - Non-Steam game launcher with Proton support.
+	 - [Prism Launcher](https://prismlauncher.org) - Minecraft launcher with Curseforge/Modrinth modding support.
 	 - [Discord](https://discord.com) - Chatting Application.
-	 - [Falcond](https://github.com/PikaOS-Linux/falcond) - Increases system priority for games and prevents automatic suspend/screen locking on desktop experiences without controller detection.
+	 - [Falcond](https://github.com/PikaOS-Linux/falcond) - Dynamically increases system priority for games and prevents automatic suspend/screen locking on desktop environments without controller detection.
 	 - [Mangohud](https://github.com/flightlessmango/Mangohud) - Performance overlay and FPS limiter, similar to [RivaTuner Statistics Server](https://www.guru3d.com/page/rivatuner-rtss-homepage/).
-		 - [Goverlay](https://github.com/benjamimgois/goverlay) - GUI for setting up mangohud.
+		 - [Goverlay](https://github.com/benjamimgois/goverlay) - Mangohud Configuration Software
  - You can choose to install any of the following creative applications:
 	 - [KdenLive](https://kdenlive.org) - Non-linear video editor.
 	 - [Audacity](https://www.audacityteam.org) - Audio recording and editing.
@@ -76,10 +79,13 @@ When it's ready, which is rather soon.
 	 - [Blockbench](https://www.blockbench.net) - 3D Modeling software specialized for low-poly work.
 	 - [Krita](https://krita.org) - Digital Painting software.
 	 - [GNU Image Manipulation Program(GIMP)](https://www.gimp.org) - Photo Manipulation software.
-	 - [RapidRAW](https://github.com/cybertimon/rapidraw) - Nondestructive photography post-processing software.
-	 - Considering:[Ardour 9](https://ardour.org) - Digital Audio Workstation
-	 - Considgering:[Bitwig](https://www.bitwig.com) - Digital Audio Workstation
-	 - Considering:[Reaper](https://www.reaper.fm) - Digital Audio Workstation
+	 - [RapidRAW](https://github.com/cybertimon/rapidraw) -  RAW photograph developing software for past Lightroom users.
+	 - Considered Applications...
+		 - [Ardour 9](https://ardour.org) - Digital Audio Workstation
+		 - [Bitwig](https://www.bitwig.com) - Digital Audio Workstation
+		 - [Reaper](https://www.reaper.fm) - Digital Audio Workstation
+		 - [darktable](https://www.darktable.org) - RAW photograph developing software for advanced users.
+		 - [RawTherapee](https://www.rawtherapee.com) - RAW photograph developing software for advanced users.
  - You can choose to install any of the following applications:
 	 - [Vivaldi](https://vivaldi.com) - Privacy first web browser based on Chromium with a built-in adblocker.
 	 - [OBS Studio](https://obsproject.com) - recording and broadcasting software.
@@ -93,9 +99,9 @@ When it's ready, which is rather soon.
 ### Terminal aliases(for zsh and bash)
 #### Custom Helpers
  - foxupdater
-   - `sudo dnf update` and `flatpak update` - Updates native and Flatpak packages back to back.
+   - `sudo dnf update` and `flatpak update` - Full system update for Native and Flatpak applications.
  - foxfetch
-   - `fastfetch` - Displays system spec and other information.
+   - `fastfetch` - Displays system specifications and other associated information.
  - clearfox
    - `clear && fastfetch` - The same as `foxfetch` but it clears the terminals before displaying.
  - installfont
