@@ -1,15 +1,15 @@
 #!/bin/bash
 ###BASIC SCRIPT START
-  echo "Ready..."
-  sleep 2
-  echo "Set..."
-  sleep 2
-  echo "GO!!!"
-  sleep 1
+  echo "Script starting in three seconds..."
+  sleep 3
 ##dnf: ADD RPMFUSION
 sudo dnf -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
   echo "Added RPM Fusion repositories to DNF"
+##dnf: ADD TERRA
+sudo dnf -y install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+sudo dnf -y config-manager enable terra #fallback
+  echo "Added Terra repositories to DNF"
 ##flatpak: ADD FLATHUB, DISABLE FEDORA
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak remote-modify --enable flathub
@@ -23,16 +23,20 @@ sudo dnf -y group upgrade core
   echo "Latest updates installed"
   sleep 3
 
+#Terra
+sudo dnf -y install terra-release-mesa
 #Fedora
 sudo dnf -y group install multimedia
 sudo dnf install gstreamer1-plugin-openh264 mozilla-openh264
 ##RPMFusion
 sudo dnf -y swap ffmpeg-free ffmpeg --allowerasing
-sudo dnf -y swap mesa-vulkan-drivers mesa-vulkan-drivers-freeworld
-sudo dnf -y swap  mesa-va-drivers-freeworld mesa-va-drivers-freeworld
 sudo dnf -y update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+
+sudo dnf -y update --refresh
+flatpak -y upgrade
   echo "Multimeda support enabled"
   sleep 3
+
 sudo cp /etc/dnf/dnf.conf ./files/backup/dnf.conf.bu
 sudo chown $USER:$USER ./files/backup/dnf.conf.bu
   echo "Created backup of dnf.conf in ./files/backup"
@@ -56,11 +60,10 @@ rm ./Noto-COLRv1.ttf
   sleep 3
 
 ##Fedora
-sudo dnf -y install kate flatseal gnome-disk-utility btrfs-assistant
+sudo dnf -y install kate flatseal gnome-disk-utility btrfs-assistant gparted
 sudo dnf -y remove kwrite
 ##Flatpak
 flatpak -y install it.mijorus.gearlever
-#io.github.kolunmi.Bazaar
   echo ""
   echo "Installed main utilities"
   sleep 3

@@ -1,13 +1,26 @@
 #!/bin/bash
+##dnf: ADD Faugus COPR
 sudo dnf -y copr enable faugus/faugus-launcher
-sudo dnf -y install faugus-launcher
-  echo "Installed Faugus Launcher for using Proton in non-steam"
-#Fedora
-sudo dnf -y install steam gamemode mangohud discord goverlay gamemode.i686 mangohud.i686
-sudo gpasswd -a $USER gamemode
-  echo "Added user to gamemode group"
+##dnf: ADD AZUL JAVA
+sudo dnf -y install https://cdn.azul.com/zulu/bin/zulu-repo-1.0.0-2.noarch.rpm
+
+sudo dnf -y update --refresh
+flatpak -y update
+
+#Fedora and COPR
+sudo dnf -y install steam faugus-launcher discord mangohud mangohud.i686 goverlay protontricks
+#Terra
+sudo dnf -y install prismlauncher zulu25-jre zulu21-jre zulu17-jre zulu8-jre
+sudo dnf -y remove java-25-openjdk
+sudo dnf -y remove gamemode
+sudo dnf -y install falcond-gui falcond
+sudo gpasswd -a $USER falcond
+  echo "Added user to falcond group"
+sudo systemctl enable falcond.service
+sudo systemctl start falcond.service
+  echo "Enabled falcond services"
 #Flatpak
-flatpak -y install com.vysp3r.ProtonPlus org.prismlauncher.PrismLauncher
+flatpak -y install com.vysp3r.ProtonPlus
 
   echo "Installed gaming applications"
   sleep 3

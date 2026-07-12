@@ -43,7 +43,7 @@ When it's ready, which is rather soon.
  - Several Terminal Adjustments:
 	 - Shell is defaulted to zsh, enables terminal colored syntax highlighting and auto completion.
 	 - DNF is tweaked so that the default input for Enter is "Yes" in Y/N questions.
-	 - Help aliases added to zsh(and Bash!), [listed below](#terminal-aliasesfor-zsh-and-bash).
+	 - Help aliases added to zsh(and Bash!), [Listed below](#terminal-aliasesfor-zsh-and-bash).
 	 - The [FoxFetch](#foxfetch--theme) Fastfetch theme is installed.
 
 ### Performance 
@@ -52,23 +52,24 @@ When it's ready, which is rather soon.
 ## Full Applications List
  - Installs the following applications:
 	 - [zsh](https://www.zsh.org) - a fast terminal shell with auto completion.
-		 - [Zsh Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - for syntax highlighting.
-		 - [Fastfetch](https://github.com/fastfetch-cli/fastfetch) - displays system specs and other information.
+		 - [Zsh Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - syntax highlighting for zsh.
+		 - [Fastfetch](https://github.com/fastfetch-cli/fastfetch) - Displays system specs and other information.
 	 - [BTRFS Assistant](https://gitlab.com/btrfs-assistant/btrfs-assistant) - BTRFS management software.
-	 - [GNOME Disk](https://apps.gnome.org/DiskUtility/) - the GNOME Partition Manager.
+	 - [GNOME Disk](https://apps.gnome.org/DiskUtility/) - The GNOME Partition Manager.
+	 - [Gparted](https://gparted.org) - An advanced partition manager.
 	 - [Flatseal](https://github.com/tchx84/flatseal) - Flatpak Permission management.
 	 - [Gearlever](https://github.com/mijorus/gearlever) - AppImage management.
 	 - [Kate Text Editor](https://kate-editor.org) - Simple and Advanced text editor. Replaces Kwrite in KDE Plasma installs.
- - User Choice, install all listed gaming applications and tools:
-	 - [Steam](https://store.steampowered.com) - for Steam games.
+ - YOu can choose to install all listed gaming applications and tools:
+	 - [Steam](https://store.steampowered.com) - For Steam games.
 		 - [Proton Plus](https://protonplus.vysp3r.com) - Easy management for Proton and Steam launch commands.
-	 - [Faugus Launcher](https://github.com/Faugus/faugus-launcher) - for non-Steam games.
+	 - [Faugus Launcher](https://github.com/Faugus/faugus-launcher) - For non-Steam games.
 	 - [Prism Launcher](https://prismlauncher.org) - A minecraft launcher.
 	 - [Discord](https://discord.com) - Chatting Application.
 	 - [Falcond](https://github.com/PikaOS-Linux/falcond) - Increases system priority for games and prevents automatic suspend/screen locking on desktop experiences without controller detection.
 	 - [Mangohud](https://github.com/flightlessmango/Mangohud) - Performance overlay and FPS limiter, similar to [RivaTuner Statistics Server](https://www.guru3d.com/page/rivatuner-rtss-homepage/).
 		 - [Goverlay](https://github.com/benjamimgois/goverlay) - GUI for setting up mangohud.
- - User Choice, You can choose to install the following creative applications:
+ - You can choose to install any of the following creative applications:
 	 - [KdenLive](https://kdenlive.org) - Non-linear video editor.
 	 - [Audacity](https://www.audacityteam.org) - Audio recording and editing.
 	 - [Blender](https://www.blender.org) - Advanced 3D Modeling software.
@@ -76,7 +77,10 @@ When it's ready, which is rather soon.
 	 - [Krita](https://krita.org) - Digital Painting software.
 	 - [GNU Image Manipulation Program(GIMP)](https://www.gimp.org) - Photo Manipulation software.
 	 - [RapidRAW](https://github.com/cybertimon/rapidraw) - Nondestructive photography post-processing software.
- - User Choice, You can choose to install the following applications:
+	 - Considering:[Ardour 9](https://ardour.org) - Digital Audio Workstation
+	 - Considgering:[Bitwig](https://www.bitwig.com) - Digital Audio Workstation
+	 - Considering:[Reaper](https://www.reaper.fm) - Digital Audio Workstation
+ - You can choose to install any of the following applications:
 	 - [Vivaldi](https://vivaldi.com) - Privacy first web browser based on Chromium with a built-in adblocker.
 	 - [OBS Studio](https://obsproject.com) - recording and broadcasting software.
 	 - [Easy Effects](https://github.com/wwmm/easyeffects) - can filter speaker ouput and microphone input for voice calls. Similar to Nvidia Broadcast.
